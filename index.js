@@ -4,15 +4,18 @@ const form = document.querySelector('form')
 console.log(form)
 
 // adding input functionality
+// listen to the form
+
 form.addEventListener("submit", (event)=>{
     event.preventDefault();
-    console.log('test')
+    console.log('Form has been submitted')
 })
 
+// next step is to target our forms via event 
+// ex: name = event.target.name.value if the form name was 'name'
 
 
 
-// listen to the form
 
 // on form submission: call a function
     // store data into a variable
