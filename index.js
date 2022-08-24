@@ -4,7 +4,16 @@ const form = document.querySelector('form')
 console.log(form)
 
 // adding input functionality
+form.addEventListener("submit", (event)=>{
+    event.preventDefault();
+    console.log('test')
+})
+
+
+
+
 // listen to the form
+
 // on form submission: call a function
     // store data into a variable
     // create a new li element
@@ -16,3 +25,4 @@ console.log(form)
 
 
 
+// log: form listening functionality completed
