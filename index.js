@@ -9,7 +9,16 @@ console.log(form)
 form.addEventListener("submit", (event)=>{
     event.preventDefault();
     console.log('Form has been submitted')
+    let entry = event.target.formLabel.vlaue
+
 })
+
+function listTemplate (entry) {
+    const li = document.createElement('li');
+    li.textContent += entry
+    return li;
+}
+
 
 // next step is to target our forms via event 
 // ex: name = event.target.name.value if the form name was 'name'
